@@ -1,6 +1,9 @@
 kind: pipeline
 name: default
 
+workspace:
+  base: /go
+  path: src/github.com/ribbybibby/catl
 
 steps:
 - name: test
@@ -8,4 +11,3 @@ steps:
   commands:
   - go get
   - go test
-  - go build
